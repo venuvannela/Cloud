@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head
+<title>
+    "Venu Vannela"
+  </title>
+  <body>
+    <style>
+    body {
+  background-image: url("");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: 100px 100px;
+  }
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 10%; 
+  min-height: 10%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: grey;
+  color: black;
+}
+
+  div.content {
+  text-align: center;
+}
+
+    </style>
+    <video autoplay muted loop id="myVideo">
+  <source src="2 Video.mp4" type="video/mp4">
+
+</video>
+
+    <div class="content">
+    <h1><font face="Tangerine" style="italic" size="9" color="pink">Vannnela Venu Madhav Goud</font></h1>
+
+
+     <img src="IMG_8063.JPG" width="350" height="450">
+
+<h2>About</h2>
+<p><a href="R.html">Resume</a></p>
+<p><a href="P.html">Poster</a></p>
+
+ <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+
+  </body>
+</head>
+</html>
